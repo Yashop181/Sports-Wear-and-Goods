@@ -1,0 +1,77 @@
+/* Login.css */
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto; /* Added margin for spacing */
+    padding: 20px;
+    background-color: black; /* Black background */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px black; /* Increased box shadow */
+  }
+  
+  h2 {
+    text-align: center;
+    color: #fff; /* White text */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Specific styles for labels inside form groups */
+  .form-group label {
+    color: #fff; /* White text */
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff; /* White text */
+    background-color: #333; /* Dark gray background for input fields */
+  }
+  
+  .submit-button {
+    width: 100%;
+    background-color: #4caf50; /* Green button */
+    color: #fff;
+    padding: 12px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .register-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .register-link p {
+    color: #fff; /* White text */
+    margin-bottom: 0; /* Remove bottom margin from paragraph */
+  }
+  
+  .register-link a {
+    color: #3498db; /* Blue link color */
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  .login-container h2
+  {
+    color: white;
+  }
