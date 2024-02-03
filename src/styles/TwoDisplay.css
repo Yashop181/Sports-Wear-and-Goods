@@ -26,6 +26,11 @@
     font-size: 24px;
     font-weight: bold;
     text-align: center;
+    color: rgb(12, 12, 12);
+    background: linear-gradient(45deg, #6bff9a, #556270);
+    border-radius: 25px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   }
   
 /* TwoDisplay.css */

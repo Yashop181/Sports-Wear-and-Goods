@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
 import "../src/styles/OrderDetails.css";
+import Admin from './Admin';
 const OrderDetails = () => {
   
   const orderDetails = {
@@ -28,6 +29,8 @@ const OrderDetails = () => {
   };
 
   return (
+    <section style={{display:"flex"}}>
+      <Admin/>
     <div className="order-details">
       <h1>Order Details</h1>
       <Link to="/order-details" className="back-link">
@@ -86,6 +89,7 @@ const OrderDetails = () => {
         <button onClick={handleUpdateStatus}>Update Status</button>
       </div>
     </div>
+    </section>
   );
 };
 

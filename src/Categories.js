@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import "../src/styles/Categorie.css";
 import { FaTrash } from 'react-icons/fa'; // Import the trash can icon from react-icons
+import Admin from './Admin';
 
 const Categories = () => {
   const [categories, setCategories] = useState([]);
@@ -30,6 +31,8 @@ const Categories = () => {
   };
 
   return (
+    <section style={{display:"flex"}}>
+      <Admin/>
     <div className="categories-container">
       <hr />
       <h1>Create Category</h1>
@@ -68,6 +71,7 @@ const Categories = () => {
         </tbody>
       </table>
     </div>
+    </section>
   );
 };
 

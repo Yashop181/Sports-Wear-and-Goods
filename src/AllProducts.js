@@ -61,7 +61,7 @@ const AllProducts = () => {
   <div className="products-found">Products Found</div>
   <div className="search-input">
     <input type="text" placeholder="Search Products" />
-    <FaSearch className="search-icon" />
+    <FaSearch className="search-ico" />
   </div>
 </div>
 

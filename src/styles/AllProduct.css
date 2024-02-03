@@ -20,10 +20,24 @@
     width: 150px; /* Adjust the width as needed */
   }
   
-  .search-icon {
-    margin-left: 5px;
-    cursor: pointer;
+  .search-input {
+    position: relative;
+    display: inline-block;
   }
+  
+  .search-input-field {
+    padding-right: 30px; /* Adjust the padding to make space for the icon */
+  }
+  
+  .search-ico {
+    position: absolute;
+    right: 8px; /* Adjust the position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: green;
+  }
+  
   
   /* AllProduct.css */
 

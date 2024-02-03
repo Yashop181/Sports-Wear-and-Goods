@@ -13,7 +13,7 @@ import Footer from "./components/Footer"
 const Home = () => {
   return (
     <div>
-      <h1>Home hi</h1>
+
       <Vid/>
       <div className="below-video">
         <h3>Sports Wear and Goods</h3>

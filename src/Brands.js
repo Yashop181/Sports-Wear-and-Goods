@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import "../src/styles/Brands.css";
 import { FaTrash } from 'react-icons/fa'; // Import the trash can icon from react-icons
+import Admin from './Admin';
 
 const Brands = () => {
   const [brands, setBrands] = useState([]);
@@ -35,6 +36,8 @@ const Brands = () => {
   };
 
   return (
+    <section style={{display:"flex"}}>
+      <Admin/>
     <div className="brands-container">
       <hr />
       <h1>Create Brand</h1>
@@ -83,6 +86,7 @@ const Brands = () => {
         </tbody>
       </table>
     </div>
+    </section>
   );
 };
 
