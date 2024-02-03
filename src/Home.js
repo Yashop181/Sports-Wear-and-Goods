@@ -8,11 +8,13 @@ import ImageGallery from "./components/ImageGalley"
 import ImageGallerytwo from "./components/ImageGallerytwo"
 import myui from "../src/public/images/Shoe.jpg"
 import Footer from "./components/Footer"
+import CouponDisplay from "./components/CouponDisplay"
 
 
 const Home = () => {
   return (
     <div>
+      <CouponDisplay/>
 
       <Vid/>
       <div className="below-video">
