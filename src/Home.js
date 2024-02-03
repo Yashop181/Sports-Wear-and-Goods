@@ -13,15 +13,18 @@ import Footer from "./components/Footer"
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <h1>Home hi</h1>
       <Vid/>
       <div className="below-video">
         <h3>Sports Wear and Goods</h3>
         <h1>FIND YOUR FEEL</h1>
         <p>HIIT the gym with locked-in support and next-level confidence. Enjoy your rest day or simply chill in the softest flexibility imaginable. From working out to pressing pause, Nike bras and leggings are the essential foundation for your day — no matter what life throws your way.
         </p>
+        <br/>
+
         <Link>Shop Sportswear</Link>
       </div>
+      <br/>
       <div className="grid-start">
         <h2>This Season's Fresh Fits</h2>
       </div>
@@ -38,9 +41,10 @@ const Home = () => {
         <h1>AIR JORDAN XXXVIII LOW</h1>
         <p>Make your moves with total control in the new AJXXXVLLL Low 'Fresh Start'.Inspired by the season of rebirth , with pastel tones and cutting- edge tech designed for mobility and explosivenss
         </p>
+        <br/>
         <Link>Shop Sportswear</Link>
       </div>
-    
+      <br/>
       <h1>Always Iconic</h1>
       
       <h1>Shop by Sport</h1>

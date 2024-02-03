@@ -16,7 +16,7 @@ const MyCart = () => {
       <div className="right-section">
         <div className="description">
           <p>Product Description</p>
-          <p>In Stock</p>
+          <p>In Stocks</p>
           <p>Price: $382.00</p>
           <p>Size: 
             <select>
