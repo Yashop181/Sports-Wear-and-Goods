@@ -58,6 +58,18 @@
       display: grid;
       grid-template-columns: repeat(1, 1fr);
     }
+    .textOverlay
+    {
+      font-size: 18px;
+      border-radius: 10px;
+      background: linear-gradient(45deg, #6b7aff, #ce1414);
+    }
+    .shopButton
+    {
+      background-color: #007bff;
+      width: 50%;
+    }
+    
   }
 /* Your CSS */
 .vid-next img {
