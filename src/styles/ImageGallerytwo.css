@@ -34,5 +34,8 @@ div.scroll-container {
     .scroll-container img {
       width: 100%;
     }
+    div.scroll-container::-webkit-scrollbar {
+      height: 20px;
+    }
     
   }
