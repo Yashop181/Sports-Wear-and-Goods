@@ -28,7 +28,7 @@ div.scroll-container {
   }
   
   div.scroll-container::-webkit-scrollbar-track {
-    background-color: #333;
+    background-color: rgba(21, 182, 18, 0.422);
   }
   @media (max-width: 500px) {
     .scroll-container img {
