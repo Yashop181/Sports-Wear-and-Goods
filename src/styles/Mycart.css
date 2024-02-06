@@ -102,4 +102,9 @@ select {
   .right-section {
     margin-top: 20px;
   }
+  .small-images {
+    width: 100%;
+  }
+
+  
 }
