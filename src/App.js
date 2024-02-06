@@ -23,6 +23,7 @@ import Brands from './Brands';
 import OrderDetails from './OrderDetails';
 import AdminPage from './AdminPage';
 import Sdbar from './Sdbar';
+import CustomCursor from './components/CustomCursor';
 
 
 
@@ -32,6 +33,7 @@ const App = () => {
   return (
     <Router>
       <div>
+        <CustomCursor/>
         <Navbar />
       
         <Routes>
@@ -54,11 +56,8 @@ const App = () => {
           <Route path='/add-categories' element={<Categories/>} />
           <Route path='/add-brands' element={<Brands/>} />
           <Route path='/order-details' element={<OrderDetails/>} />
-
-
-
-
         </Routes>
+
 
 
 
