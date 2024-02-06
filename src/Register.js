@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom'; // Import Link and useNavigate
 import "../src/styles/Register.css";
+import Footer from './components/Footer';
 
 const Register = () => {
   const [name, setName] = useState('');
@@ -21,6 +22,7 @@ const Register = () => {
   };
 
   return (
+    <>
     <div className="register-container">
       <h2>Register</h2>
       <form onSubmit={handleSubmit}>
@@ -77,6 +79,8 @@ const Register = () => {
         <p>Already have an account? <Link to="/login">Login</Link></p>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

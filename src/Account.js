@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import "../src/styles/Login.css";
+import Footer from './components/Footer';
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
@@ -15,7 +16,8 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="login-container">
+    <>
+        <div className="login-container">
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
@@ -53,6 +55,10 @@ const LoginForm = () => {
         </p>
       </div>
     </div>
+    <Footer/>
+    
+    </>
+
   );
 };
 
