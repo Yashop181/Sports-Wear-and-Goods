@@ -1,95 +1,59 @@
-import React, { useState } from 'react';
-import "../src/styles/Coupon.css"; 
-import Admin from './Admin';
-
+import { useState } from "react";
+import axios from "axios";
 const Coupon = () => {
-  const [coupons, setCoupons] = useState([]);
-  const [couponName, setCouponName] = useState('');
-  const [discountPercentage, setDiscountPercentage] = useState('');
-  const [expiryDate, setExpiryDate] = useState('');
 
-  const handleSaveCoupon = () => {
-    // Validate and save the coupon to the state
-    if (couponName && discountPercentage && expiryDate) {
-      const newCoupon = {
-        serialNumber: coupons.length + 1,
-        name: couponName,
-        discountPercentage: discountPercentage,
-        dateCreated: new Date().toLocaleDateString(),
-        expiryDate: expiryDate,
-      };
 
-      setCoupons([...coupons, newCoupon]);
+  const [input, setInput]= useState({});
 
-      // Clear the form fields after saving the coupon
-      setCouponName('');
-      setDiscountPercentage('');
-      setExpiryDate('');
-    }
-  };
+  const handleInput=(e)=>
+  {
+    let name=e.target.name;
+    let value=e.target.value;
 
-  const handleDeleteCoupon = (serialNumber) => {
-    // Delete the coupon based on serial number
-    const updatedCoupons = coupons.filter((coupon) => coupon.serialNumber !== serialNumber);
-    setCoupons(updatedCoupons);
-  };
+    setInput(values=>({...values,[name]:value}));
+  }
+
+
+  const handleSubmit=()=>
+  {
+    axios.post("http://localhost:5050/couponSave" ,input).then(alert("Data Saved!!!"));
+  }
+
+
 
   return (
-    <section style={{display:"flex"}}>
-      <Admin/>
-      <div className="coupon-container">
-      <h1>All Coupons</h1>
+    <>
+    <div class="container">
       
-      {/* Coupons Table */}
-      <table className="coupons-table">
-        <thead>
-          <tr>
-            <th>S/N</th>
-            <th>Name</th>
-            <th>Discount%</th>
-            <th>Date Created</th>
-            <th>Expiry Date</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {coupons.map((coupon) => (
-            <tr key={coupon.serialNumber}>
-              <td>{coupon.serialNumber}</td>
-              <td>{coupon.name}</td>
-              <td>{coupon.discountPercentage}</td>
-              <td>{coupon.dateCreated}</td>
-              <td>{coupon.expiryDate}</td>
-              <td>
-                <button onClick={() => handleDeleteCoupon(coupon.serialNumber)}>Delete</button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div class="form-container">
+      <h2 >Insert Details</h2>
 
-      {/* Create Coupon Section */}
-      <hr />
-      <h1>Create Coupon</h1>
-      <p>Use the form to create a coupon.</p>
+        <div class="form-group">
+          <label for="code">code</label>
+          <input type="text" id="code" name="code" value={input.code}  onChange={handleInput}  />
+        </div>
 
-      {/* Coupon Form */}
-      <div className="coupon-form">
-        <label>Coupon Name:</label>
-        <input type="text" value={couponName} onChange={(e) => setCouponName(e.target.value)} />
+        <div class="form-group">
+          <label for="discountPercentage">discountPercentage:</label>
+          <input type="text" id="discountPercentage" name="discountPercentage" value={input.discountPercentage}  onChange={handleInput} />
+        </div>
 
-        <label>Discount%:</label>
-        <input type="text" value={discountPercentage} onChange={(e) => setDiscountPercentage(e.target.value)} />
+        <div class="form-group">
+          <label for="validFrom">ValidFrom:</label>
+          <input type="text" id="validFrom" name="validFrom" value={input.validFrom}  onChange={handleInput}  />
+        </div>
 
-        <label>Expiry Date:</label>
-        <input type="text" value={expiryDate} onChange={(e) => setExpiryDate(e.target.value)} />
+        <div class="form-group">
+          <label for="validTill">ValidTill</label>
+          <input type="text" id="validTill" name="validTill" value={input.validTill}  onChange={handleInput}  />
+        </div>
+        
 
-        <button onClick={handleSaveCoupon}>Save Coupon</button>
-      </div>
+        <input type="submit" value="Submit" onClick={handleSubmit}/>
+
     </div>
-
-
-    </section>
+  </div>
+    </>
   );
 };
 

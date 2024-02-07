@@ -1,7 +1,7 @@
 /* Register.css */
 
 .register-container {
-  background-image: url('https://images.unsplash.com/photo-1554034483-04fda0d3507b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-image: url('https://images.unsplash.com/photo-1550684376-efcbd6e3f031?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
   background-position: center;
   padding: 40px;
@@ -62,7 +62,7 @@ button[type='submit']:hover {
 }
 .register-container h2
 {
-  color: rgba(98, 0, 255, 0.69);
+  color: rgba(0, 255, 0, 0.69);
 }
 .login-link p
 {

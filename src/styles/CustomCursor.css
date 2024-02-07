@@ -4,14 +4,14 @@
   position: fixed;
   width: 20px;
   height: 20px;
-  background-color: #ff6600; /* Customize the cursor color */
+  background-color: #ff6600; 
   border-radius: 50%;
-  pointer-events: none; /* Allow interactions with elements behind the cursor */
-  z-index: 9999; /* Ensure the cursor stays on top of other elements */
-  transition: transform 0.6s ease;
+  pointer-events: none;
+  z-index: 9999; 
+  transition: transform 0.8s ease;
   transform-origin: center;
 }
   body {
-    cursor: none; /* Hide the default cursor */
+    cursor: none; 
   }
   
