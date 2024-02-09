@@ -63,4 +63,7 @@
   .coupon-form button:hover {
     background-color: #0056b3;
   }
-  
+  .form-group label
+  {
+    color: black;
+  }

@@ -43,6 +43,12 @@ const AddProduct = () => {
       <form className="product-form" onSubmit={handleFormSubmit}>
 
         <ImageUpload/>
+        
+        {/* <input
+          type="file"
+          accept="image/*"
+          
+        /> */}
 
         <div className="form-group">
           <label className="form-label">Product Name:</label>
@@ -52,8 +58,8 @@ const AddProduct = () => {
           <label className="form-label">Product Category:</label>
           <select className="form-input" value={productCategory} onChange={(e) => setProductCategory(e.target.value)}>
             {/* Add category options */}
-            <option value="category1">Category 1</option>
-            <option value="category2">Category 2</option>
+            <option value={"Electronics"}>Category 1</option>
+            <option value={"category2"}>Category 2</option>
             {/* Add more options as needed */}
           </select>
         </div>

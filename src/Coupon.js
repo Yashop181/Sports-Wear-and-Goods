@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import "../src/styles/Coupon.css";
 const Coupon = () => {
 
 
@@ -40,12 +41,12 @@ const Coupon = () => {
 
         <div class="form-group">
           <label for="validFrom">ValidFrom:</label>
-          <input type="text" id="validFrom" name="validFrom" value={input.validFrom}  onChange={handleInput}  />
+          <input type="Date" id="validFrom" name="validFrom" value={input.validFrom}  onChange={handleInput}  />
         </div>
 
         <div class="form-group">
           <label for="validTill">ValidTill</label>
-          <input type="text" id="validTill" name="validTill" value={input.validTill}  onChange={handleInput}  />
+          <input type="Date" id="validTill" name="validTill" value={input.validTill}  onChange={handleInput}  />
         </div>
         
 
